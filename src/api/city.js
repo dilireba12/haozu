@@ -4,11 +4,11 @@ import request from '@/utils/request'
  *
  * @returns 获取城市列表数据
  */
-export const getCityList = (level) => {
+export const getCityList = () => {
   return request({
     url: '/area/city',
     params: {
-      level
+      level: 1
     }
   })
 }

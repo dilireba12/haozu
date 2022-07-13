@@ -14,3 +14,17 @@ export const getRentGroupList = () => {
     }
   })
 }
+
+/**
+ *
+ * @param {获取房屋查询条件} id
+ * @returns
+ */
+export const getHomeCondition = (id) => {
+  return request({
+    url: '/houses/condition',
+    params: {
+      id
+    }
+  })
+}
